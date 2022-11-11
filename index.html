@@ -39,8 +39,11 @@
 
     <main>
     <hr/>  
-        <section class="section-about">  
+        <section class="section-about"> 
             <h1> Hi, i'm Nicole a web developer in progress. 🏄🏻‍♀️</h1>
+            <img id="foto" 
+            src="images/Peter-Css.jpeg"
+            alt="Imagen-peter" style="width:20%;"/>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 consequuntur nihil officia sed at hic praesentium debitis, asperiores
@@ -133,8 +136,8 @@
                         <label for="phone">phone</label>
                     </div>
                         <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="phone number">
-                    
-                        <legend>How did you meet me?</legend>
+            
+                        <legend class="title-margin">How did you meet me?</legend>
                             <div>
                                 <label for="kc">Keepcoding kick-off</label>
                                 <input required id="kc" type="radio" name="favLang" value="kc">
@@ -155,16 +158,17 @@
                                 <input  required id="Other" type="radio" name="favLang" value="Other">
                             </div>  
                     <div>
-                        <label for="">Indica tu tag de GitHub</label>
+                        <label class="title-margin" >Indica tu tag de GitHub</label>
                     </div>
                         <input type="hash" pattern="^@[^\s]+" placeholder="star with @">
                     
                     <div>
-                        <label for="Bio">Message</label>
+                        <label class="title-margin">Message</label>
                     </div>
-                    <textarea required id="Bio"></textarea>
-            
-                <input type="submit" value="Send">
+                    <div>
+                        <textarea required id="text"></textarea>
+                    </div>
+                    <input type="submit" value="Send">
                 </div>
                 
         </form>
