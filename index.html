@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Prueba práctica</title>
+    <title>Practice-html.html</title>
 
 <!-- Estilos de reset y main. -->
     <link rel="stylesheet" href="styles/reset.css">
@@ -16,107 +16,159 @@
     <header>
             
         <!-- Header deberá tener una imagen de fondo, optimizada para distintas resoluciones.-->
-        <div>
-            <img id="logo" 
+        <div class="logo">
+            <img id="foto" 
             src="images/DIYCoding.png"
-            alt="Imagen-fondo" style="width:20%;"/>
+            alt="Imagen-logo" style="width:30%;"/>
         </div> 
     </header>
 
-    <div class="Titulo"> Hi, i'm Nicole a web developer in progress.</div>
         <!--Barra de navegación con links a cada elemento del portafolio-->
     <br/>
 
         <nav class="navbar">
             <div class="container">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">My portfolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="index.html">Portafolio</a></li>
+                    <li><a href="index.html">My Skills</a></li>
+                    <li><a href="index.html">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
 
 
     <main>
-    <hr/>     
-    
+    <hr/>  
+        <section class="section-about">  
+            <h1> Hi, i'm Nicole a web developer in progress. 🏄🏻‍♀️</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                consequuntur nihil officia sed at hic praesentium debitis, asperiores
+                eum, iure consequatur nobis nesciunt amet alias suscipit porro dolore
+                architecto. Temporibus mollitia cum veritatis? Ducimus quaerat
+                corrupti ipsum aspernatur nam quasi excepturi praesentium iusto sequi.
+                Ea nobis quas velit ipsa repellendus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                consequuntur nihil officia sed at hic praesentium debitis, asperiores
+                eum, iure consequatur nobis nesciunt amet alias suscipit porro dolore
+                architecto. Temporibus mollitia cum veritatis? Ducimus quaerat
+                corrupti ipsum aspernatur nam quasi excepturi praesentium iusto sequi.
+                Ea nobis quas velit ipsa repellendus?
+            </p>  
+        </section>   
     <!-- Skills aprendidas-->
-<section> 
+<section class="section"> 
     <div class="caja-padre">
         
         <div class="contenedor">
             <h2>MY SKILLS</h2>
-            
-            <label>Python</label>   
-            <div><span><p>10 %</p></span></div>
-            <div class="menu">
-                <div id="python-menu"></div>
+
+            <div class="skills">
+                <div class="details">
+                    <span>Python</span>
+                    <span>60%<span>
+                </div>
+                <div class="menu">
+                    <div id="python-menu"></div>
+                </div>
             </div>
 
-            <label>HTML</label>
-            <div><span><p>70 %</p></span></div>
-            <div class="menu">
-                <div id="html-menu"></div>
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>50%</span>
+                </div>
+                <div class="menu">
+                    <div id="html-menu"></div>
+                </div>
             </div>
 
-            <label>GIT</label>
-            <div><span><p>50 %</p></span></div>
-            <div class="menu">
-                <div id="git-menu"></div>
+            <div class="skills">
+                <div class="details">
+                    <span>GIT</span>
+                    <span> 50%</span>
+                </div>                            
+                <div class="menu">
+                    <div id="git-menu"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>30%</span>
+                </div>
+                <div class="menu">
+                    <div id="css-menu"></div>
+                </div>
+            </div>
         </div>
 
     </main>
 <!-- Formulario de contacto -->
 <hr>
 <body>
-    <em>Contact me</em>
-    <form class="form-white" action="registro-completado.html">
-        <div>
-            <label for="name">Name</label>
-            <input required id="Name" name="name" type="text" placeholder="add your name">
-        </div>
-        <div>
-            <label for="lastname">Last Name</label>
-            <input required id="lastname" name="lastname" type="text" placeholder="add your last name">
-        </div>
-        <div>
-            <label for="mail">email</label>
-            <input required id="mail" name="email" type="email" placeholder="email">
-        </div>
+    <div class="form-block">
+        <form action="registro-completado.html">
+            <section class="gform_heading">Contact me</section>
+                <div class="form-white">
+                    <div>
+                        <label for="name">Name</label>
+                    </div>
+                        <input required id="Name" name="name" type="text" placeholder="add your name">
+                    
+                    <div>
+                        <label for="lastname">Last Name</label>
+                    </div>
+                        <input required id="lastname" name="lastname" type="text" placeholder="add your last name">
+                    
 
-        <div>
-            <label for="phone">phone</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="phone number">
-        </div>
-        <fieldset>
-            <legend>How did you meet me?</legend>
-        
-            <label for="kc">Keepcoding kick-off</label>
-            <input required id="kc" type="radio" name="favLang" value="kc">
-            <div>
-                <label for="ln">LinkedIn</label>
-                <input required id="ln" type="radio" name="favLang" value="ln"> 
-            </div>
-        
-                <label for="gh">GitHub</label>
-                <input  required id="gh" type="radio" name="favLang" value="gh">
-            </div>
-            <div> 
-                <label for="Other">Other</label>
-                <input  required id="Other" type="radio" name="favLang" value="Other">
-            </div>    
-        </fieldset>
-            <div>
-                <label for="">Indica tu tag de GitHub</label>
-                <input type="hash" pattern="^@[^\s]+" placeholder="star with @"/>
-            </div>
-            <div>
-                <label for="Bio">Message</label>
-                <textarea required id="Bio"></textarea>
-            </div>
-        <input type="submit" value="Send">
-    </form>
+                    <div>
+                        <label for="mail">email</label>
+                    </div>
+                        <input required id="mail" name="email" type="email" placeholder="email">
+                    
+
+                    <div>
+                        <label for="phone">phone</label>
+                    </div>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="phone number">
+                    
+                        <legend>How did you meet me?</legend>
+                            <div>
+                                <label for="kc">Keepcoding kick-off</label>
+                                <input required id="kc" type="radio" name="favLang" value="kc">
+                            </div>
+
+                            <div>
+                                <label for="ln">LinkedIn</label>
+                                <input required id="ln" type="radio" name="favLang" value="ln"> 
+                            </div>  
+
+                            <div>         
+                                <label for="gh">GitHub</label>
+                                <input  required id="gh" type="radio" name="favLang" value="gh">
+                            </div>
+
+                            <div> 
+                                <label for="Other">Other</label>
+                                <input  required id="Other" type="radio" name="favLang" value="Other">
+                            </div>  
+                    <div>
+                        <label for="">Indica tu tag de GitHub</label>
+                    </div>
+                        <input type="hash" pattern="^@[^\s]+" placeholder="star with @">
+                    
+                    <div>
+                        <label for="Bio">Message</label>
+                    </div>
+                    <textarea required id="Bio"></textarea>
+            
+                <input type="submit" value="Send">
+                </div>
+                
+        </form>
+    </div>
     <hr/> 
 
 <footer class="footer white">
