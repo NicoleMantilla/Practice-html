@@ -15,29 +15,60 @@ header{
     text-align: center;
     font-weight: bolder;
     font-family: monospace;
-}*/
-*{margin:0;padding:0;box-sizing:border-box;font-size:0;}
+}
+
+*/
+* {
+    margin:0;padding:0;box-sizing:border-box;font-size:0;
+}
             
 nav a{
     text-decoration:none;
     color:inherit;
-    font-size:14px;
-    } 
-    nav li{
-    display:inline-block;
-    width:10%;
-    padding:5px 10px;
-    background-color:#000;
-    border:1px solid #000;
-    text-align:center;
-    color:#fff;
-    }
-    nav li:hover{
-    background-color:#fff;
-    color:#000;
+    font-size:15px;
     }
 
-    .link {
+nav ul {
+    display:inline-flex;
+    margin: auto;
+    padding: auto;
+    background-color:#000;
+    border:1px solid #000;
+    text-align: center;
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+nav li {
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+}
+
+nav li:hover{
+    background-color:#fff;
+    color:#000;
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 576px) {
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+.link {
         text-decoration: none;
 }
 
@@ -66,4 +97,98 @@ nav a{
     /* 3. paddings */
     padding: 40px 0;
     /* color: #FFFFFF; */
+}
+h1{
+    font-style: italic;
+    
+    
+}
+.img{
+    margin: 20px 10px 0 5px;
+}
+.ul{
+    display:flex 
+}
+.form {
+    font-style: italic;
+    /* background-color: rgb(80, 128, 25); */
+    text-align: center;
+    /*
+    Absolute 
+    font-size: 16px;
+    */
+    /* relatives: rem, em */
+    /* 1rem = 16px  */
+    font-size: 1.5rem; /* 32px?? */
+    /* 1. border */
+    /* border: 2px solid red; */
+    /* border-radius: 10px; */
+    /* 2. margin */
+    margin: 10px;
+    /* margin-left: 0;*/
+    /* margin: Top Right Bottom Left */
+    margin: 20px 10px 0 5px;
+    /* margin: Y (top/bottom) X (left/right) */
+    margin: 0 20px;
+    margin: 20px 0 0 0;
+    /* 3. paddings */
+    padding: 40px 0;
+    /* color: #FFFFFF; */
+}
+
+/*--- SKILLS CON ANIMMACIÓN.---*/
+
+.caja-padre {
+    width: 40%;
+    min-width: 590px;
+    top: 50%;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 30px 30px 50px; 
+    background: linear-gradient(450deg,#47089C, rgb(6, 6, 6));
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contenedor * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
+.skills:not(last-child) {
+    margin-bottom: 30px;
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.menu{
+    position: relative;
+    border: 1px solid rgb(209, 92, 92);
+    border-radius: 20px;
+}
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color:rgb(209, 92, 92) ;
 }
