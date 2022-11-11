@@ -13,108 +13,119 @@
 
 
 <body>
-    <h1> Hi, i'm Nicole a web developer in progress.</h1>
-        <!--Barra de navegación con links a cada elemento del portafolio-->
-        <nav><ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">My portfolio</a></li>
-            <li><a href="#">Contact me</a></li>
-        </ul></nav>
-
     <header>
-        <main>
             
-    <!-- Header deberá tener una imagen de fondo, optimizada para distintas resoluciones.-->
-        <img class="" 
-        src="images/photo-coding.png"
-        alt="Imagen-fondo" style="width: 100%;"/>
-        
+        <!-- Header deberá tener una imagen de fondo, optimizada para distintas resoluciones.-->
+        <div>
+            <img id="logo" 
+            src="images/DIYCoding.png"
+            alt="Imagen-fondo" style="width:20%;"/>
+        </div> 
     </header>
+
+    <div class="Titulo"> Hi, i'm Nicole a web developer in progress.</div>
+        <!--Barra de navegación con links a cada elemento del portafolio-->
+    <br/>
+
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My portfolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    <main>
+    <hr/>     
     
     <!-- Skills aprendidas-->
-<section class="barcontainer"> 
-    <div class="progress-bar-container">
-        <div class="progressContainer1">
+<section> 
+    <div class="caja-padre">
+        
+        <div class="contenedor">
+            <h2>MY SKILLS</h2>
+            
             <label>Python</label>   
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner1"><p>10 %</p></span>
+            <div><span><p>10 %</p></span></div>
+            <div class="menu">
+                <div id="python-menu"></div>
             </div>
-            <label>HTML</label>
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner2"><p>70 %</p></span>
-            </div>
-            <label>JavaScript</label>
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner3"><p>8 %</p></span>
-            </div>
-        </div>
-        <div class="progressContainer2">
-            <label>Photoshop</label>
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner4"><p>65 %</p></span>
-            </div>
-            <label>CSS</label>
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner5"><p>80 %</p></span>
-            </div>
-            <label>GIT</label>
-            <div class="progress-bar stripes animated reverse slower">
-            <span class="progress-bar-inner6"><p>50 %</p></span>
-            </div>
-        </main>
-<!-- Formulario de contacto -->
 
+            <label>HTML</label>
+            <div><span><p>70 %</p></span></div>
+            <div class="menu">
+                <div id="html-menu"></div>
+            </div>
+
+            <label>GIT</label>
+            <div><span><p>50 %</p></span></div>
+            <div class="menu">
+                <div id="git-menu"></div>
+        </div>
+
+    </main>
+<!-- Formulario de contacto -->
+<hr>
 <body>
-    <h2>Contact me</h2>
-    <form action="registro-completado.html" method="post" novalidate>
+    <em>Contact me</em>
+    <form class="form-white" action="registro-completado.html">
         <div>
-            <label for="name">name</label>
-            <input required id="name" name="name" type="text" placeholder="add your name">
+            <label for="name">Name</label>
+            <input required id="Name" name="name" type="text" placeholder="add your name">
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input required id="lastname" name="lastname" type="text" placeholder="add your last name">
         </div>
         <div>
             <label for="mail">email</label>
-            <input required id="mail" name="email" type="email">
+            <input required id="mail" name="email" type="email" placeholder="email">
         </div>
 
         <div>
             <label for="phone">phone</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]+">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="phone number">
         </div>
-
-    <fieldset>
-        <legend>How did you meet me?</legend>
+        <fieldset>
+            <legend>How did you meet me?</legend>
         
-        <label for="kc">Keepcoding kick-off</label>
-        <input required id="kc" type="radio" name="favLang" value="kc">
-        <div>
-            <label for="ln">LinkedIn</label>
-            <input required id="ln" type="radio" name="favLang" value="ln"> 
-        </div>
+            <label for="kc">Keepcoding kick-off</label>
+            <input required id="kc" type="radio" name="favLang" value="kc">
+            <div>
+                <label for="ln">LinkedIn</label>
+                <input required id="ln" type="radio" name="favLang" value="ln"> 
+            </div>
         
-            <label for="gh">GitHub</label>
-            <input  required id="gh" type="radio" name="favLang" value="gh">
-        </div>
-        <div> 
-            <label for="Other">Other</label>
-            <input  required id="Other" type="radio" name="favLang" value="Other">
-        </div>    
-            </fieldset>
+                <label for="gh">GitHub</label>
+                <input  required id="gh" type="radio" name="favLang" value="gh">
+            </div>
+            <div> 
+                <label for="Other">Other</label>
+                <input  required id="Other" type="radio" name="favLang" value="Other">
+            </div>    
+        </fieldset>
             <div>
                 <label for="">Indica tu tag de GitHub</label>
-                <input type=""/>
+                <input type="hash" pattern="^@[^\s]+" placeholder="star with @"/>
             </div>
-            <label for="Message">Bio</label>
-            <textarea required id="Message"></textarea>
+            <div>
+                <label for="Bio">Message</label>
+                <textarea required id="Bio"></textarea>
+            </div>
         <input type="submit" value="Send">
     </form>
+    <hr/> 
 
-<footer>
+<footer class="footer white">
     <!-- Enlaces conforman un menú de navegación. -->
     <nav>
     <!-- Importante tener en cuenta que son links a un recurso externo y tenemos no queremos dejar información nuestra en esas webs. -->
-        <a href="https://www.linkedin.com/in/nicole-mantillaf/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/NicoleMantilla" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/itsredfilm/" target="_blank">Instagram</a>
+    <a class="link white" href="https://www.linkedin.com/in/nicole-mantillaf/" target="_blank">Linkedin</a>
+    <a class="link white" href="https://github.com/NicoleMantilla" target="_blank">GitHub</a>
+    <a class="link white" href="https://www.instagram.com/itsredfilm/" target="_blank">Instagram</a>
     </nav>
 </footer>
 </body>
