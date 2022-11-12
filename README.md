@@ -17,9 +17,9 @@ Es un portafolio de programación con tres secciones;
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Mira en CODE en **HTTPS** para copiar el enlace. Abres tu editor de texto con el que trabajas y su terminal. 
+Mira CODE en **HTTPS** para copiar el enlace. Abres tu editor de texto con el que trabajas y su terminal. 
 En la terminal ingresas a la carpeta donde vas a clonar el git con el siguiente comando: git clone https://github.com/NicoleMantilla/practice-html.git
 
 ## El stack tecnológico utilizado ha sido:
