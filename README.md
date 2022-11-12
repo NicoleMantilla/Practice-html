@@ -1,16 +1,19 @@
 # practice-html
 # PORTAFOLIO
 
-_En este proyecto hemos hecho una práctica de html y css, para el bootcamp mujeres in tech.
-Es un portafolio de programación con tres secciones,
-1. Portfolio.
-2. My Skills.
-3. Contact me. 
-
 <div align="center">
   <a href="https://github.com/NicoleMantilla/practice-html">
-    <img src="https://i.pinimg.com/564x/fc/07/98/fc0798fbbb2ca78589cba7400187bec3.jpg" alt="Logo" width="240" height="160">
+    <img src="https://i.pinimg.com/564x/fc/07/98/fc0798fbbb2ca78589cba7400187bec3.jpg" alt="Logo">
   </a>
+
+_En este proyecto hemos hecho una práctica de html y css, para el bootcamp mujeres in tech._
+
+Es un portafolio de programación con tres secciones;
+1. Portfolio: descripción de mi.
+2. My Skills: Barras de habilidades animadas.
+3. Contact me: Formulario de contacto.
+
+
 
 ## Comenzando 🚀
 
