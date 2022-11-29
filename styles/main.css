@@ -61,8 +61,6 @@ h1{
     text-align: center;
     margin: 10px;
     margin: 20px 10px 5px 5px;
-    margin: 0 20px;
-    margin: 20px 0 0 0;
     padding: 40px 0;
     color: white;
     font-weight: bold;
@@ -75,9 +73,7 @@ p{
     font: inherit;
     vertical-align: baseline;
     margin: 40px 20px 10px 10px;
-    margin: 0 30px;
-    margin: 30px 0 0 0;
-    padding: 50px 0;
+    padding: 50px 50px;
     box-sizing: inherit;
     color: white;
 
