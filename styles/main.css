@@ -64,12 +64,12 @@ h1{
     padding: 40px 0;
     color: white;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 70px;
+    font-size: 30px;
     vertical-align: baseline;
     margin: 20px 20px 10px 10px;
     padding: 20px 50px;
@@ -79,11 +79,13 @@ p{
 }
 .section-about {
     background-color: #8f63e0;
+    font: inherent,
     text-align: center !important;
     margin-block-start: 1.00em;
     margin-block-end: 1.00em;
     margin-inline-start: 50px;
     margin-inline-end: 50px;
+    box-sizing: inherit;
     padding: 20px, 20px;
     
 }
