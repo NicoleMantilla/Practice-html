@@ -174,7 +174,7 @@ h2 {
 
 @keyframes python-progress{
     100%{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -200,6 +200,11 @@ h2 {
 
 #css-menu{
     animation: css-progress 3s forwards;
+}
+@keyframes git-progress{
+    100%{
+        width: 50%;
+    }
 }
 
 
